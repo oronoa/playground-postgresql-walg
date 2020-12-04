@@ -1,7 +1,7 @@
-FROM golang:1.14.1-alpine3.11 AS builder
+FROM golang:1.14.13-alpine3.11 AS builder
 
-ENV WALG_VERSION=v0.2.15
-ENV BROTLI_VERSION=v1.0.7
+ENV WALG_VERSION=v0.2.19
+ENV BROTLI_VERSION=v1.0.9
 
 RUN set -ex \
      && apk add --no-cache wget cmake git build-base bash
